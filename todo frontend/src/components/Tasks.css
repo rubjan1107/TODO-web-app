@@ -1,0 +1,135 @@
+/* Container for the entire tasks section */
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+    background:linear-gradient(to bottom right,#c94444,#c08e4d,#9bc91f);
+    justify-content: center;
+    border-top:30px solid white;
+   
+}
+
+/* Heading for the task list */
+.tasks-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Input field and add task button container */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the task input field */
+.tasks-container input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button for adding a task */
+.tasks-container button {
+    padding: 10px 15px;
+    background-color: #0c12aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tasks-container button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+/* Task list styling */
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Individual task styling */
+.tasks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed task styling */
+.tasks-list li.completed-task span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Styling for "Mark as Completed" button */
+.tasks-list .complete-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tasks-list .complete-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for "Undo Completion" button */
+.tasks-list .undo-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tasks-list .undo-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Styling for "Delete" button */
+.tasks-list .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tasks-list .delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* General button styling */
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
